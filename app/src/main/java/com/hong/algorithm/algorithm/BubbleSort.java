@@ -6,7 +6,7 @@ package com.hong.algorithm.algorithm;
 
 public class BubbleSort {
     // 简单的冒泡
-    public static int[] BubbleSort(int[] dest) {
+    public static int[] Bubble(int[] dest) {
         int length = dest.length;
         int pre;
         for (int i = 0; i < length - 1; i++) {
@@ -24,7 +24,7 @@ public class BubbleSort {
     }
 
     // 冒泡优化1 处理 1，，2，3，4，5，6，，7， 没有发生交换或者中间某个过程之后不再发生交换
-    public static int[] BubbleSort1(int[] dest) {
+    public static int[] Bubble1(int[] dest) {
         int length = dest.length;
         boolean flag = true; //发生了交换就为true, 没发生就为false，第一次判断时必须标志位true。对于有序的数组减少判断
         int pre;
@@ -45,7 +45,7 @@ public class BubbleSort {
     }
 
     // 冒泡优化2  处理 3，2，4，5，6，7，8，9，10（后面又10000个数据 兼容上面优化）
-    public static int[] BubbleSort2(int[] dest) {
+    public static int[] Bubble2(int[] dest) {
         int flag = dest.length - 1; //发生了交换就为true, 没发生就为false，第一次判断时必须标志位true。对于有序的数组减少判断
         int pre;
         int k ;

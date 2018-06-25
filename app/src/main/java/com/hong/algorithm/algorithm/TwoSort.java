@@ -5,4 +5,10 @@ package com.hong.algorithm.algorithm;
  */
 
 public class TwoSort {
+
+    // 二分查找
+    public static int[] TwoSortA(int[] dest) {
+
+        return dest;
+    }
 }
